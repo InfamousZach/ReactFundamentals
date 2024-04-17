@@ -9,3 +9,4 @@ import {Row} from 'reactstrap';
             </footer>
         );
     };
+    export default Footer;

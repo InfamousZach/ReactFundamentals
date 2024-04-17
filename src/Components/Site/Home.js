@@ -31,3 +31,4 @@ import {Link} from 'react-router-dom';
             </div>
         );
     };
+    export default Home;

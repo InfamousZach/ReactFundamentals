@@ -1,7 +1,7 @@
 import {
             Route,
             Link,
-            Switch
+            Routes
         } from 'react-router-dom';
         import Home from './Home';
         import Resources from './Resources';
@@ -17,11 +17,11 @@ import {
                        </ul>
                    </div>
                    <div className='sidebar-route'>
-                       <Switch>
-                           <Route exact path='/home'><Home /></Route>
-                           <Route exact path='/resources'><Resources /></Route>
-                           <Route exact path='/'><Home /></Route>
-                       </Switch>
+                       <Routes>
+                           <Route exact path='/home' element={<Home />}/>
+                           <Route exact path='/resources' element={<Resources />}/>
+                           <Route exact path='/' element={<Home />}/>
+                       </Routes>
                    </div>
                </div>
            );
