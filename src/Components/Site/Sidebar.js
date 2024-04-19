@@ -5,7 +5,8 @@
     } from 'react-router-dom';
     import Home from './Home';
     import Resources from './Resources';
-    import FunctionalComponentDemo from '../concepts/FunctionalComponentDemo';
+    import FunctionalComponentDemo from '../concepts/FunctionalComponents/FunctionalComponentDemo';
+    import JSX from '../concepts/FunctionalComponents/JSX/JSX';
         
     const Sidebar = () => {
         return(
@@ -15,6 +16,7 @@
                         <li><Link to='/'>Home</Link></li>
                         <li><Link to='/resources'>Resources</Link></li>
                         <li><Link to='/functionalcomponent'>Functional Component</Link></li>
+                        <li><Link to='/jsx'>JSX</Link></li>
                     </ul>
                 </div>
                 <div className='sidebar-route'>
@@ -22,7 +24,8 @@
                         <Route exact path='/home' element={<Home />}/>
                         <Route exact path='/resources' element={<Resources />}/>
                         <Route exact path='/' element={<Home />}/>
-                        <Route exact path='/functionalcomponent'element={<FunctionalComponentDemo />}/>
+                        <Route exact path='/functionalcomponent' element={<FunctionalComponentDemo />}/>
+                        <Route exact path='/jsx' element={<JSX />}/>
                     </Routes>
                 </div>
             </div>
